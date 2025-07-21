@@ -119,26 +119,52 @@ int main()
     printf("\nSuper Poder: %f", super_poder_carta_2);
 
     printf("\n\nComparando atributos:");
-    char *carta_vencedora = (populacao_cidade_carta_1 > populacao_cidade_carta_2)? "Carta 1" : "Carta 2";
-    printf("\nPopulação: A %s venceu!", carta_vencedora);
-    
-    carta_vencedora = (area_cidade_carta_1 > area_cidade_carta_2)? "Carta 1" : "Carta 2";
-    printf("\nÁrea: A %s venceu!", carta_vencedora);
-
-    carta_vencedora = (pib_cidade_carta_1 > pib_cidade_carta_2) ? "Carta 1" : "Carta 2";
-    printf("\nPIB: A %s venceu!", carta_vencedora);
-    
-    carta_vencedora = (pontos_turisticos_cidade_carta_1 > pontos_turisticos_cidade_carta_2)? "Carta 1" : "Carta 2";
-    printf("\nPontos Turísticos: A %s venceu!", carta_vencedora);
-    
-    carta_vencedora = (densidade_populacional_carta_1 < densidade_populacional_carta_2)? "Carta 1" : "Carta 2";
-    printf("\nDensidade Populacional: A %s venceu!", carta_vencedora);
-
-   carta_vencedora = (pib_per_capita_carta_1 > pib_cidade_carta_2)? "Carta 1" : "Carta 2";
-    printf("\nPIB per Capita: A %s venceu!", carta_vencedora);
-
-   carta_vencedora = (super_poder_carta_1 > super_poder_carta_2)? "Carta 1" : "Carta 2";
-   printf("\nSuper Poder: A %s venceu!", carta_vencedora);
+    printf("\n-----------------------------Opções----------------------------------");
+    printf("\n1 - População");
+    printf("\t\t\t2 - Área");
+    printf("\n3 - PIB ");
+    printf("\t\t\t4 - Pontos Turísticos");
+    printf("\n5 - Densidade Populacional");
+    printf("\t6 - PIB per Capita");
+    printf("\n7 - Super Poder");
+    printf("\n---------------------------------------------------------------------\n");
+    int opcao;
+    char *carta_vencedora;
+    scanf("%d", &opcao);
+    switch (opcao)
+    {
+    case 1:
+       carta_vencedora = (populacao_cidade_carta_1 > populacao_cidade_carta_2)? "Carta 1" : "Carta 2";
+      printf("\nPopulação: A %s venceu!", carta_vencedora);
+      break;
+   case 2:
+      carta_vencedora = (area_cidade_carta_1 > area_cidade_carta_2)? "Carta 1" : "Carta 2";
+      printf("\nÁrea: A %s venceu!", carta_vencedora);
+      break;
+   case 3:
+      carta_vencedora = (pib_cidade_carta_1 > pib_cidade_carta_2) ? "Carta 1" : "Carta 2";
+      printf("\nPIB: A %s venceu!", carta_vencedora);
+      break;
+   case 4:
+      carta_vencedora = (pontos_turisticos_cidade_carta_1 > pontos_turisticos_cidade_carta_2)? "Carta 1" : "Carta 2";
+      printf("\nPontos Turísticos: A %s venceu!", carta_vencedora);
+      break;
+   case 5:
+         carta_vencedora = (densidade_populacional_carta_1 < densidade_populacional_carta_2)? "Carta 1" : "Carta 2";
+         printf("\nDensidade Populacional: A %s venceu!", carta_vencedora);
+      break;
+   case 6:
+         carta_vencedora = (pib_per_capita_carta_1 > pib_cidade_carta_2)? "Carta 1" : "Carta 2";
+         printf("\nPIB per Capita: A %s venceu!", carta_vencedora);
+      break;
+   case 7:
+      carta_vencedora = (super_poder_carta_1 > super_poder_carta_2)? "Carta 1" : "Carta 2";
+      printf("\nSuper Poder: A %s venceu!", carta_vencedora);
+      break;
+    default:
+      printf("Opção inválida");
+      break;
+    }
    
    // system("pause");
    return 0;
