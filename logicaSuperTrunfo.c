@@ -119,7 +119,7 @@ int main()
     printf("\nSuper Poder: %f", super_poder_carta_2);
 
     printf("\n\nComparando atributos:");
-    char *carta_vencedora = (populacao_cidade_carta_1 > populacao_cidade_carta_2)?? "Carta 1" : "Carta 2";
+    char *carta_vencedora = (populacao_cidade_carta_1 > populacao_cidade_carta_2)? "Carta 1" : "Carta 2";
     printf("\nPopulação: A %s venceu!", carta_vencedora);
     
     carta_vencedora = (area_cidade_carta_1 > area_cidade_carta_2)? "Carta 1" : "Carta 2";
