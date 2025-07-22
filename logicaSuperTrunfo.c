@@ -130,36 +130,64 @@ int main()
     printf("\n---------------------------------------------------------------------\n");
     int opcao;
     char *carta_vencedora;
+    char *nome_cidade_vencedora;
     scanf("%d", &opcao);
     switch (opcao)
     {
     case 1:
-       carta_vencedora = (populacao_cidade_carta_1 > populacao_cidade_carta_2)? "Carta 1" : "Carta 2";
-      printf("\nPopulação: A %s venceu!", carta_vencedora);
+      carta_vencedora = (populacao_cidade_carta_1 > populacao_cidade_carta_2)? "Carta 1" : "Carta 2";
+      nome_cidade_vencedora = (carta_vencedora == "Carta 1")? nome_cidade_carta_1 : nome_cidade_carta_2;
+      printf("\nComparação de cartas (Atributo: População):");
+      printf("\nCarta 1 - %s: %lu", nome_cidade_carta_1, populacao_cidade_carta_1);
+      printf("\nCarta 2 - %s: %lu", nome_cidade_carta_2, populacao_cidade_carta_2);
+      printf("\nResultado: A %s (%s) venceu!", carta_vencedora, nome_cidade_vencedora);
       break;
    case 2:
       carta_vencedora = (area_cidade_carta_1 > area_cidade_carta_2)? "Carta 1" : "Carta 2";
-      printf("\nÁrea: A %s venceu!", carta_vencedora);
+      nome_cidade_vencedora = (carta_vencedora == "Carta 1")? nome_cidade_carta_1 : nome_cidade_carta_2;
+      printf("\nComparação de cartas (Atributo: Área):");
+      printf("\nCarta 1 - %s: %f", nome_cidade_carta_1, area_cidade_carta_1);
+      printf("\nCarta 2 - %s: %f", nome_cidade_carta_2, area_cidade_carta_2);
+      printf("\nResultado: A %s (%s) venceu!", carta_vencedora, nome_cidade_vencedora);
       break;
    case 3:
       carta_vencedora = (pib_cidade_carta_1 > pib_cidade_carta_2) ? "Carta 1" : "Carta 2";
-      printf("\nPIB: A %s venceu!", carta_vencedora);
+      nome_cidade_vencedora = (carta_vencedora == "Carta 1")? nome_cidade_carta_1 : nome_cidade_carta_2;
+      printf("\nComparação de cartas (Atributo: PIB):");
+      printf("\nCarta 1 - %s: %f", nome_cidade_carta_1, pib_cidade_carta_1);
+      printf("\nCarta 2 - %s: %f", nome_cidade_carta_2, pib_cidade_carta_2);
+      printf("\nResultado: A %s (%s) venceu!", carta_vencedora, nome_cidade_vencedora);
       break;
    case 4:
       carta_vencedora = (pontos_turisticos_cidade_carta_1 > pontos_turisticos_cidade_carta_2)? "Carta 1" : "Carta 2";
-      printf("\nPontos Turísticos: A %s venceu!", carta_vencedora);
+      nome_cidade_vencedora = (carta_vencedora == "Carta 1")? nome_cidade_carta_1 : nome_cidade_carta_2;
+      printf("\nComparação de cartas (Atributo: Pontos Turísticos):");
+      printf("\nCarta 1 - %s: %d", nome_cidade_carta_1, pontos_turisticos_cidade_carta_1);
+      printf("\nCarta 2 - %s: %d", nome_cidade_carta_2, pontos_turisticos_cidade_carta_2);
+      printf("\nResultado: A %s (%s) venceu!", carta_vencedora, nome_cidade_vencedora);
       break;
    case 5:
          carta_vencedora = (densidade_populacional_carta_1 < densidade_populacional_carta_2)? "Carta 1" : "Carta 2";
-         printf("\nDensidade Populacional: A %s venceu!", carta_vencedora);
+         nome_cidade_vencedora = (carta_vencedora == "Carta 1")? nome_cidade_carta_1 : nome_cidade_carta_2;
+         rintf("\nComparação de cartas (Atributo: Densidade Populacional):");
+         printf("\nCarta 1 - %s: %f", nome_cidade_carta_1, densidade_populacional_carta_1);
+         printf("\nCarta 2 - %s: %f", nome_cidade_carta_2, densidade_populacional_carta_2);
+         printf("\nResultado: A %s (%s) venceu!", carta_vencedora, nome_cidade_vencedora);
       break;
    case 6:
          carta_vencedora = (pib_per_capita_carta_1 > pib_cidade_carta_2)? "Carta 1" : "Carta 2";
-         printf("\nPIB per Capita: A %s venceu!", carta_vencedora);
-      break;
+         nome_cidade_vencedora = (carta_vencedora == "Carta 1")? nome_cidade_carta_1 : nome_cidade_carta_2;
+         printf("\nComparação de cartas (Atributo: PIB per Capita):");
+         printf("\nCarta 1 - %s: %f", nome_cidade_carta_1, pib_per_capita_carta_1);
+         printf("\nCarta 2 - %s: %f", nome_cidade_carta_2, pib_per_capita_carta_2);
+         printf("\nResultado: A %s (%s) venceu!", carta_vencedora, nome_cidade_vencedora);
+         break;
    case 7:
       carta_vencedora = (super_poder_carta_1 > super_poder_carta_2)? "Carta 1" : "Carta 2";
-      printf("\nSuper Poder: A %s venceu!", carta_vencedora);
+      printf("\nComparação de cartas (Atributo: Super Poder):");
+      printf("\nCarta 1 - %s: %f", nome_cidade_carta_1, super_poder_carta_1);
+      printf("\nCarta 2 - %s: %f", nome_cidade_carta_2, super_poder_carta_2);
+      printf("\nResultado: A %s (%s) venceu!", carta_vencedora, nome_cidade_vencedora);
       break;
     default:
       printf("Opção inválida");
