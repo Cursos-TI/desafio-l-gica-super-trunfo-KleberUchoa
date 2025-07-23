@@ -142,8 +142,8 @@ int main()
       (carta_vencedora == "Carta 2") ? nome_cidade_carta_2 : "Empate";
 
       printf("\nComparação de cartas (Atributo: População):");
-      printf("\nCarta 1 - %s: %f", nome_cidade_carta_1, populacao_cidade_carta_1);
-      printf("\nCarta 2 - %s: %f", nome_cidade_carta_2, populacao_cidade_carta_2);
+      printf("\nCarta 1 - %s: %lu", nome_cidade_carta_1, populacao_cidade_carta_1);
+      printf("\nCarta 2 - %s: %lu", nome_cidade_carta_2, populacao_cidade_carta_2);
 
       if(carta_vencedora ==  "Empate")
       {
@@ -203,8 +203,8 @@ int main()
       (carta_vencedora == "Carta 2") ? nome_cidade_carta_2 : "Empate";
 
       printf("\nComparação de cartas (Atributo: Pontos Turísticos):");
-      printf("\nCarta 1 - %s: %f", nome_cidade_carta_1, pontos_turisticos_cidade_carta_1);
-      printf("\nCarta 2 - %s: %f", nome_cidade_carta_2, pontos_turisticos_cidade_carta_2);
+      printf("\nCarta 1 - %s: %d", nome_cidade_carta_1, pontos_turisticos_cidade_carta_1);
+      printf("\nCarta 2 - %s: %d", nome_cidade_carta_2, pontos_turisticos_cidade_carta_2);
 
       if(carta_vencedora ==  "Empate")
       {
