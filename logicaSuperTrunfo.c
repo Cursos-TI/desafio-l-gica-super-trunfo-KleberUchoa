@@ -147,7 +147,7 @@ int main()
 
       if(carta_vencedora ==  "Empate")
       {
-         printf("Houve empate nesse atributo");
+         printf("\nHouve empate nesse atributo");
       }
       else
       {
@@ -167,7 +167,7 @@ int main()
 
       if(carta_vencedora ==  "Empate")
       {
-         printf("Houve empate nesse atributo");
+         printf("\nHouve empate nesse atributo");
       }
       else
       {
@@ -188,7 +188,7 @@ int main()
 
       if(carta_vencedora ==  "Empate")
       {
-         printf("Houve empate nesse atributo");
+         printf("\nHouve empate nesse atributo");
       }
       else
       {
@@ -208,7 +208,7 @@ int main()
 
       if(carta_vencedora ==  "Empate")
       {
-         printf("Houve empate nesse atributo");
+         printf("\nHouve empate nesse atributo");
       }
       else
       {
@@ -228,7 +228,7 @@ int main()
 
       if(carta_vencedora ==  "Empate")
       {
-         printf("Houve empate nesse atributo");
+         printf("\nHouve empate nesse atributo");
       }
       else
       {
@@ -248,7 +248,7 @@ int main()
 
       if(carta_vencedora ==  "Empate")
       {
-         printf("Houve empate nesse atributo");
+         printf("\nHouve empate nesse atributo");
       }
       else
       {
@@ -268,7 +268,7 @@ int main()
 
       if(carta_vencedora ==  "Empate")
       {
-         printf("Houve empate nesse atributo");
+         printf("\nHouve empate nesse atributo");
       }
       else
       {
@@ -276,7 +276,7 @@ int main()
       }
       break;
     default:
-      printf("Opção inválida");
+      printf("\nOpção inválida");
       break;
     }
    
